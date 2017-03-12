@@ -15,6 +15,10 @@ img.curly {
   margin-right: -10px;
 }
 
+.bigs {
+  font-size: 60px;
+}
+
 .nameBox {
   width: 55%;
   margin: auto;
