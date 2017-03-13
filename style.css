@@ -3,7 +3,7 @@ body {
     padding: 0;
 }
 
-img {
+img.logo {
   height: 50px;
   width: 50px;
   margin: 0px;
@@ -11,6 +11,8 @@ img {
 }
 
 img.curly {
+  height: 50px;
+  width: 50px;
   margin-left: -10px;
   margin-right: -10px;
 }
