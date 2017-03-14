@@ -8,10 +8,11 @@
   <!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>-->
   <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
   <script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script>
+  <script type="text/javascript" src="js/swap.js"></script>
 
 
 </head>
-<body>
+<body onload="startTimer()">
 
 <div id="container">
 
@@ -20,25 +21,49 @@
 
   <div id="name">
     <span class="rotate">
-    Anisimov, Artem|
-    Camyn, Jessah|
-    Dawson, Cooper|
-    Edmondson, Macallyster|
-    Gaura, Genevieve|
-    Graves, Kyle|
-    Hawley, Madison|
-    Jennings, Josiah|
-    Paradiso, Macey|
-    Phillips, Dakota|
-    Reathaford, Tanner|
-    Riordan, Ciara|
-    Sharp, Jarret
+      Wolfe, Robert	|
+West, Connell	|
+Ward, Luke	|
+Wagner, Ethan	|
+Vandenberg, Karsten	|
+Stumm, Braeden	|
+Stern, Brielle	|
+Soderstrom, Alexandria	|
+Sims, Hailey	|
+Shurtleff, Jacob	|
+Reathaford, Tanner	|
+Phillips, Dakota	|
+Phillips, Ashlyn	|
+Paradiso, Madisen	|
+Osmun, Jacob	|
+Matelich, Abraham	|
+Martin, Brandon	|
+Marshall, Lily	|
+Lemon, Casey	|
+Lawrey, Julia	|
+Graves, Kyle	|
+Gleaton, Abe	|
+Gaura, Genevieve	|
+Gallagher, Lucas	|
+Edmondson, Macallyster	|
+Dawson, Cooper	|
+Davis, Quincee	|
+Camyn, Jessah	|
+Busch, Nick	|
+Brekke, Michael	|
+Beltran, Elena	|
+Beierle, Quinn	|
+Beeler, Blake	|
+Austin, Trey	|
+Anisimov, Artem	|
+Abbott, Collan
+
   </span>
   </div>
 
-  <img src="icons/curly-open.png" class="curly">
-  <img src="icons/dab.png">
-  <img src="icons/curly-close.png" class="curly">
+  <img src="images/curly-open.png" class="curly">
+  <img src="icons/icon-02.png" id="icon">
+  <img src="images/curly-close.png" class="curly">
 
 </div>
 
@@ -49,7 +74,7 @@
       $(".rotate").textrotator({
     animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
     separator: "|", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
-    speed: 2000 // How many milliseconds until the next word show.
+    speed: 1200 // How many milliseconds until the next word show.
     });
   });
 </script>

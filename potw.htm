@@ -8,10 +8,11 @@
   <!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>-->
   <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
   <script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script>
+  <script type="text/javascript" src="js/swap.js"></script>
 
 
 </head>
-<body>
+<body onload="startTimer()">
 
 <div id="container">
 
@@ -21,24 +22,33 @@
   <div id="name">
     <span class="rotate">
     Anisimov, Artem|
-    Camyn, Jessah|
-    Dawson, Cooper|
-    Edmondson, Macallyster|
-    Gaura, Genevieve|
-    Graves, Kyle|
-    Hawley, Madison|
-    Jennings, Josiah|
-    Paradiso, Macey|
-    Phillips, Dakota|
-    Reathaford, Tanner|
-    Riordan, Ciara|
-    Sharp, Jarret
+Austin, Trey|
+Beck, Entegra|
+Beeler, Blake|
+Beltran, Elena|
+Camyn, Jessah|
+Dawson, Cooper|
+Edmondson, Macallyster|
+Gaura, Genevieve|
+Graves, Kyle|
+Hawley, Madison|
+Jennings, Josiah|
+O'Connor, Shaelyn|
+Paradiso, Macey|
+Phillips, Dakota|
+Reathaford, Tanner|
+Riordan, Ciara|
+Sharp, Jarret|
+Sims, Hailey|
+West, Connell|
+Wolfe, Robert|
+Zavala, Taylor
   </span>
   </div>
 
-  <img src="icons/curly-open.png" class="curly">
-  <img src="icons/partyhat.png">
-  <img src="icons/curly-close.png" class="curly">
+  <img src="images/curly-open.png" class="curly">
+  <img src="icons/icon-23.png" id="icon">
+  <img src="images/curly-close.png" class="curly">
 
 </div>
 
@@ -49,7 +59,7 @@
       $(".rotate").textrotator({
     animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
     separator: "|", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
-    speed: 2000 // How many milliseconds until the next word show.
+    speed: 1600 // How many milliseconds until the next word show.
     });
   });
 </script>
