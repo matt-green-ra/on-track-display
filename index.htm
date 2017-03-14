@@ -11,26 +11,30 @@
 <div class="container">
 
   <div class="header" style="font-family: 'Caveat', cursive; float: none">
-      <p style="font-size: 100px">Y'all are caught up</p>
+      <p style="font-size: 100px">On Track: POTW</p>
+
   </div>
 
-  <div>
-    <img src="icons/curly-open.png" class="curly">
-    <img src="icons/icon-29.png" class="logo">
-    <img src="icons/icon-28.png" class="logo">
-    <img src="icons/icon-24.png" class="logo">
-    <img src="icons/icon-26.png" class="logo">
-    <img src="icons/icon-16.png" class="logo">
-    <img src="icons/icon-13.png" class="logo">
-    <img src="icons/icon-2.png" class="logo">
-    <img src="icons/curly-close.png" class="curly">
-  </div>
-
-  <img src="images/names.png" style="width: 60%; height: 60%; margin-top:20px;">
+  <div class="text" id="name"> Lorem Ipsum
 
   </div>
 
 
-<script src="functions.js"></script>
+  <script src="jquery-3.1.1.min.js"></script>
+  <script>
+  $(document).ready(function() {
+      $.ajax({
+          url : "names.json",
+          dataType: "json",
+          success : function (data) {
+              $(".text").text(data[9][1]+" "+data[9][0]);
+          }
+      });
+});
+
+
+
+  </script>
+
 </body>
 </html>
