@@ -24,8 +24,11 @@ img.curly {
 }
 
 #name {
-  font-family: 'Amatic SC', sans-serif;
-  font-size: 100px;
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
+  background: #ddd;
+  padding: 20px;
+  border: 4px solid #42548d;
 }
 
 .bigs {
