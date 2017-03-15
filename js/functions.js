@@ -7,6 +7,6 @@ $(document).ready(function() {
           for (var i = 0; i < data.length; i++) {
             res = res + data[i][1]+" "+data[i][0]+",";
           }
-          $(".rotate").html(res);
+          $(".putdatahere").html(res);
         }
     });
